@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004368A725944C0B00EE2579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004368A625944C0B00EE2579 /* Assets.xcassets */; };
 		00B4CD86259087D200F80B4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CD85259087D200F80B4F /* AppDelegate.swift */; };
 		00B4CD88259087D200F80B4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CD87259087D200F80B4F /* SceneDelegate.swift */; };
 		00B4CD8A259087D200F80B4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CD89259087D200F80B4F /* ViewController.swift */; };
 		00B4CD8D259087D200F80B4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B4CD8B259087D200F80B4F /* Main.storyboard */; };
-		00B4CD8F259087D900F80B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B4CD8E259087D900F80B4F /* Assets.xcassets */; };
 		00B4CD92259087D900F80B4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B4CD90259087D900F80B4F /* LaunchScreen.storyboard */; };
+		00B4CD9B2590A6F000F80B4F /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CD9A2590A6F000F80B4F /* MenuTableViewController.swift */; };
+		00B4CD9E2590FB3A00F80B4F /* ContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CD9D2590FB3A00F80B4F /* ContentTableViewController.swift */; };
+		00B4CDA12590FC7400F80B4F /* GoogleSheetJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDA02590FC7400F80B4F /* GoogleSheetJSON.swift */; };
+		00B4CDA42590FCBA00F80B4F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDA32590FCBA00F80B4F /* MenuTableViewCell.swift */; };
+		00B4CDAD2591A3A700F80B4F /* InitReservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDAC2591A3A700F80B4F /* InitReservation.swift */; };
+		00B4CDB12591B09A00F80B4F /* UrlRequestTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDB02591B09A00F80B4F /* UrlRequestTask.swift */; };
+		00B4CDB42592EA6800F80B4F /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDB32592EA6700F80B4F /* ContentViewController.swift */; };
+		00B4CDB92592EC4900F80B4F /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDB82592EC4900F80B4F /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		004368A625944C0B00EE2579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00B4CD82259087D200F80B4F /* EscapeGame2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EscapeGame2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B4CD85259087D200F80B4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00B4CD87259087D200F80B4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		00B4CD89259087D200F80B4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00B4CD8C259087D200F80B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		00B4CD8E259087D900F80B4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00B4CD91259087D900F80B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00B4CD93259087D900F80B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B4CD9A2590A6F000F80B4F /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		00B4CD9D2590FB3A00F80B4F /* ContentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewController.swift; sourceTree = "<group>"; };
+		00B4CDA02590FC7400F80B4F /* GoogleSheetJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetJSON.swift; sourceTree = "<group>"; };
+		00B4CDA32590FCBA00F80B4F /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		00B4CDAC2591A3A700F80B4F /* InitReservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitReservation.swift; sourceTree = "<group>"; };
+		00B4CDB02591B09A00F80B4F /* UrlRequestTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRequestTask.swift; sourceTree = "<group>"; };
+		00B4CDB32592EA6700F80B4F /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		00B4CDB82592EC4900F80B4F /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +76,43 @@
 				00B4CD87259087D200F80B4F /* SceneDelegate.swift */,
 				00B4CD89259087D200F80B4F /* ViewController.swift */,
 				00B4CD8B259087D200F80B4F /* Main.storyboard */,
-				00B4CD8E259087D900F80B4F /* Assets.xcassets */,
+				00B4CDAA259107C100F80B4F /* ViewController */,
+				00B4CDA9259107A600F80B4F /* Views */,
+				00B4CDA82591078900F80B4F /* Model */,
 				00B4CD90259087D900F80B4F /* LaunchScreen.storyboard */,
 				00B4CD93259087D900F80B4F /* Info.plist */,
+				004368A625944C0B00EE2579 /* Assets.xcassets */,
 			);
 			path = EscapeGame2;
+			sourceTree = "<group>";
+		};
+		00B4CDA82591078900F80B4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00B4CDA02590FC7400F80B4F /* GoogleSheetJSON.swift */,
+				00B4CDB02591B09A00F80B4F /* UrlRequestTask.swift */,
+				00B4CDAC2591A3A700F80B4F /* InitReservation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00B4CDA9259107A600F80B4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00B4CDA32590FCBA00F80B4F /* MenuTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00B4CDAA259107C100F80B4F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00B4CDB82592EC4900F80B4F /* HomePageViewController.swift */,
+				00B4CDB32592EA6700F80B4F /* ContentViewController.swift */,
+				00B4CD9D2590FB3A00F80B4F /* ContentTableViewController.swift */,
+				00B4CD9A2590A6F000F80B4F /* MenuTableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B4CD92259087D900F80B4F /* LaunchScreen.storyboard in Resources */,
-				00B4CD8F259087D900F80B4F /* Assets.xcassets in Resources */,
+				004368A725944C0B00EE2579 /* Assets.xcassets in Resources */,
 				00B4CD8D259087D200F80B4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +185,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B4CD9B2590A6F000F80B4F /* MenuTableViewController.swift in Sources */,
 				00B4CD8A259087D200F80B4F /* ViewController.swift in Sources */,
 				00B4CD86259087D200F80B4F /* AppDelegate.swift in Sources */,
+				00B4CDB12591B09A00F80B4F /* UrlRequestTask.swift in Sources */,
+				00B4CDA42590FCBA00F80B4F /* MenuTableViewCell.swift in Sources */,
 				00B4CD88259087D200F80B4F /* SceneDelegate.swift in Sources */,
+				00B4CDB42592EA6800F80B4F /* ContentViewController.swift in Sources */,
+				00B4CDB92592EC4900F80B4F /* HomePageViewController.swift in Sources */,
+				00B4CDA12590FC7400F80B4F /* GoogleSheetJSON.swift in Sources */,
+				00B4CDAD2591A3A700F80B4F /* InitReservation.swift in Sources */,
+				00B4CD9E2590FB3A00F80B4F /* ContentTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
