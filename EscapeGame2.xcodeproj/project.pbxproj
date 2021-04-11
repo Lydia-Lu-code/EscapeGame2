@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0022991525E3AFCE00E18705 /* ResOkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0022991425E3AFCE00E18705 /* ResOkTableViewController.swift */; };
+		0022991825E3B03E00E18705 /* ResOkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0022991725E3B03E00E18705 /* ResOkTableViewCell.swift */; };
+		002782E525A5AD5700A902FF /* EscapeResTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002782E425A5AD5700A902FF /* EscapeResTimer.swift */; };
+		00433C4A25985B2800F662FC /* ReservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00433C4925985B2800F662FC /* ReservationCell.swift */; };
 		004368A725944C0B00EE2579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004368A625944C0B00EE2579 /* Assets.xcassets */; };
+		00AA3AF7259A2A5C009688A2 /* EscapeResViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA3AF6259A2A5C009688A2 /* EscapeResViewController.swift */; };
 		00B4CD86259087D200F80B4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CD85259087D200F80B4F /* AppDelegate.swift */; };
 		00B4CD88259087D200F80B4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CD87259087D200F80B4F /* SceneDelegate.swift */; };
 		00B4CD8A259087D200F80B4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CD89259087D200F80B4F /* ViewController.swift */; };
@@ -17,14 +22,20 @@
 		00B4CD9E2590FB3A00F80B4F /* ContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CD9D2590FB3A00F80B4F /* ContentTableViewController.swift */; };
 		00B4CDA12590FC7400F80B4F /* GoogleSheetJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDA02590FC7400F80B4F /* GoogleSheetJSON.swift */; };
 		00B4CDA42590FCBA00F80B4F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDA32590FCBA00F80B4F /* MenuTableViewCell.swift */; };
-		00B4CDAD2591A3A700F80B4F /* InitReservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDAC2591A3A700F80B4F /* InitReservation.swift */; };
+		00B4CDAD2591A3A700F80B4F /* InitEscapeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDAC2591A3A700F80B4F /* InitEscapeData.swift */; };
 		00B4CDB12591B09A00F80B4F /* UrlRequestTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDB02591B09A00F80B4F /* UrlRequestTask.swift */; };
 		00B4CDB42592EA6800F80B4F /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDB32592EA6700F80B4F /* ContentViewController.swift */; };
 		00B4CDB92592EC4900F80B4F /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4CDB82592EC4900F80B4F /* HomePageViewController.swift */; };
+		00C5265725ADBF0800BD0DD8 /* GoogleSheetUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5265625ADBF0800BD0DD8 /* GoogleSheetUpload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0022991425E3AFCE00E18705 /* ResOkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResOkTableViewController.swift; sourceTree = "<group>"; };
+		0022991725E3B03E00E18705 /* ResOkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResOkTableViewCell.swift; sourceTree = "<group>"; };
+		002782E425A5AD5700A902FF /* EscapeResTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapeResTimer.swift; sourceTree = "<group>"; };
+		00433C4925985B2800F662FC /* ReservationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationCell.swift; sourceTree = "<group>"; };
 		004368A625944C0B00EE2579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00AA3AF6259A2A5C009688A2 /* EscapeResViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapeResViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		00B4CD82259087D200F80B4F /* EscapeGame2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EscapeGame2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B4CD85259087D200F80B4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00B4CD87259087D200F80B4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,10 +47,11 @@
 		00B4CD9D2590FB3A00F80B4F /* ContentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewController.swift; sourceTree = "<group>"; };
 		00B4CDA02590FC7400F80B4F /* GoogleSheetJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetJSON.swift; sourceTree = "<group>"; };
 		00B4CDA32590FCBA00F80B4F /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
-		00B4CDAC2591A3A700F80B4F /* InitReservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitReservation.swift; sourceTree = "<group>"; };
+		00B4CDAC2591A3A700F80B4F /* InitEscapeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitEscapeData.swift; sourceTree = "<group>"; };
 		00B4CDB02591B09A00F80B4F /* UrlRequestTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRequestTask.swift; sourceTree = "<group>"; };
 		00B4CDB32592EA6700F80B4F /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		00B4CDB82592EC4900F80B4F /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		00C5265625ADBF0800BD0DD8 /* GoogleSheetUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetUpload.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				00B4CDA02590FC7400F80B4F /* GoogleSheetJSON.swift */,
+				00C5265625ADBF0800BD0DD8 /* GoogleSheetUpload.swift */,
 				00B4CDB02591B09A00F80B4F /* UrlRequestTask.swift */,
-				00B4CDAC2591A3A700F80B4F /* InitReservation.swift */,
+				00B4CDAC2591A3A700F80B4F /* InitEscapeData.swift */,
+				002782E425A5AD5700A902FF /* EscapeResTimer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				00B4CDA32590FCBA00F80B4F /* MenuTableViewCell.swift */,
+				00433C4925985B2800F662FC /* ReservationCell.swift */,
+				0022991725E3B03E00E18705 /* ResOkTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +127,8 @@
 				00B4CDB32592EA6700F80B4F /* ContentViewController.swift */,
 				00B4CD9D2590FB3A00F80B4F /* ContentTableViewController.swift */,
 				00B4CD9A2590A6F000F80B4F /* MenuTableViewController.swift */,
+				00AA3AF6259A2A5C009688A2 /* EscapeResViewController.swift */,
+				0022991425E3AFCE00E18705 /* ResOkTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -186,15 +204,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B4CD9B2590A6F000F80B4F /* MenuTableViewController.swift in Sources */,
+				002782E525A5AD5700A902FF /* EscapeResTimer.swift in Sources */,
 				00B4CD8A259087D200F80B4F /* ViewController.swift in Sources */,
 				00B4CD86259087D200F80B4F /* AppDelegate.swift in Sources */,
 				00B4CDB12591B09A00F80B4F /* UrlRequestTask.swift in Sources */,
 				00B4CDA42590FCBA00F80B4F /* MenuTableViewCell.swift in Sources */,
+				00AA3AF7259A2A5C009688A2 /* EscapeResViewController.swift in Sources */,
+				0022991525E3AFCE00E18705 /* ResOkTableViewController.swift in Sources */,
 				00B4CD88259087D200F80B4F /* SceneDelegate.swift in Sources */,
+				00433C4A25985B2800F662FC /* ReservationCell.swift in Sources */,
 				00B4CDB42592EA6800F80B4F /* ContentViewController.swift in Sources */,
 				00B4CDB92592EC4900F80B4F /* HomePageViewController.swift in Sources */,
 				00B4CDA12590FC7400F80B4F /* GoogleSheetJSON.swift in Sources */,
-				00B4CDAD2591A3A700F80B4F /* InitReservation.swift in Sources */,
+				0022991825E3B03E00E18705 /* ResOkTableViewCell.swift in Sources */,
+				00C5265725ADBF0800BD0DD8 /* GoogleSheetUpload.swift in Sources */,
+				00B4CDAD2591A3A700F80B4F /* InitEscapeData.swift in Sources */,
 				00B4CD9E2590FB3A00F80B4F /* ContentTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -327,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

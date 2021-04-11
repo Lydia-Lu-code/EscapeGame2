@@ -21,6 +21,8 @@ struct EscapeSheet: Codable {
     var picture: MenuText
     var address: MenuText
     var accommodate: MenuText
+    var star: MenuText
+    var timer: MenuText
     
     enum CodingKeys: String, CodingKey {
         case name = "gsx$name"
@@ -28,6 +30,8 @@ struct EscapeSheet: Codable {
         case picture = "gsx$picture"
         case address = "gsx$address"
         case accommodate = "gsx$accommodate"
+        case star = "gsx$star"
+        case timer = "gsx$timer"
     }
 }
 

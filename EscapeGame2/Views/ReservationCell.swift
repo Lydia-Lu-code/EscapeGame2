@@ -1,19 +1,14 @@
 //
-//  MeunTableViewCell.swift
+//  ReservationCell.swift
 //  EscapeGame2
 //
-//  Created by 維衣 on 2020/12/21.
+//  Created by 維衣 on 2020/12/27.
 //
 
 import UIKit
 
-class MenuTableViewCell: UITableViewCell {
+class ReservationCell: UITableViewCell {
 
-    @IBOutlet weak var picImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var accommodateLabel: UILabel!
-    @IBOutlet weak var introLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

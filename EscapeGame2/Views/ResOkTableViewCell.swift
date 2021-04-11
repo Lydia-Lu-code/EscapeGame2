@@ -1,18 +1,18 @@
 //
-//  MeunTableViewCell.swift
+//  ResOkTableViewCell.swift
 //  EscapeGame2
 //
-//  Created by 維衣 on 2020/12/21.
+//  Created by 維衣 on 2021/2/22.
 //
 
 import UIKit
 
-class MenuTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var picImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var accommodateLabel: UILabel!
-    @IBOutlet weak var introLabel: UILabel!
+class ResOkTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var res_RoomEscape: UILabel!
+    @IBOutlet weak var res_RoomName: UILabel!
+    @IBOutlet weak var res_RoomPeople: UILabel!
+    @IBOutlet weak var res_RoomPhone: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

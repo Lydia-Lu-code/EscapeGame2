@@ -8,10 +8,15 @@
 import UIKit
 import Foundation
 
+@available(iOS 13.4, *)
 class MenuTableViewController: UITableViewController {
 
-    var escapeSheets = [EscapeSheet]()
-    var escapeData = [initReservation]()
+    var escapeData = [InitEscapeData]()
+    
+    @IBSegueAction func showContentVC(_ coder: NSCoder) -> ContentViewController? {
+        guard let row = tableView.indexPathForSelectedRow?.row else { return nil }
+        return ContentViewController(coder: coder, escapeData: escapeData[row])
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +37,13 @@ class MenuTableViewController: UITableViewController {
                     let picture = escapeSheets[i].picture.text
                     let address = escapeSheets[i].address.text
                     let accommodate = escapeSheets[i].accommodate.text
+                    let star = escapeSheets[i].star.text
+                    let timer = escapeSheets[i].timer.text
                     
-                    let getDatas = initReservation(resName: name, resIntro: intro, resPicture: picture, resAddress: address, resAccommodate: accommodate)
+                    let getDatas = InitEscapeData(initEscape_Name: name, initEscape_Intro: intro, initEscape_Picture: picture, initEscape_Address: address, initEscape_Accommodate: accommodate, initEscape_Star: star, initEscape_Timer: timer)
                     
                     self.escapeData.append(getDatas)
                 }
-                
                 DispatchQueue.main.async{
                     self.tableView.reloadData()
                 }
@@ -56,6 +62,7 @@ class MenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+ 
         return escapeData.count
     }
 
@@ -63,15 +70,14 @@ class MenuTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let showEscape = escapeData[indexPath.row]
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as? MenuTableViewCell
         
         cell?.picImage.image = UIImage(named: "0.jpg")
-        cell?.nameLabel.text = "\(showEscape.resName)"
-        cell?.introLabel.text = "\(showEscape.resIntro)"
-        cell?.accommodateLabel.text = "\(showEscape.resAccommodate)"
+        cell?.nameLabel.text = "\(showEscape.initEscape_Name)"
+        cell?.introLabel.text = "\(showEscape.initEscape_Intro)"
+        cell?.accommodateLabel.text = "\(showEscape.initEscape_Accommodate)"
 
-        if let imageURL = URL(string: showEscape.resPicture){
+        if let imageURL = URL(string: showEscape.initEscape_Picture){
             URLSession.shared.dataTask(with: imageURL) { (data, response, error) in
                 if let data = data {
                     DispatchQueue.main.async {
@@ -84,6 +90,10 @@ class MenuTableViewController: UITableViewController {
     }
     
 
+    
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -119,14 +129,19 @@ class MenuTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        if let controller = segue.destination as? ContentViewController,
+//           let row = tableView.indexPathForSelectedRow?.row {
+//            controller.escapeData = escapeData[row]
+//        }
+//        // Get the new view controller using segue.destination.
+//        // Pass the selected object to the new view controller.
+//    }
+    
 
 }
